@@ -386,8 +386,8 @@ footer .logo-clips { font-size: 24px; }
 .kg-zone > .wrap { position: relative; z-index: 1; }
 
 /* Opening photo: fade the bottom of the cut-out into the background instead of a hard edge.
-   The image is 149% of the frame tall and starts 9.8% down, so the frame bottom sits at ~60% of it. */
-.hero .photo .cut { -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 40%, rgba(0,0,0,.55) 50%, transparent 59%); mask-image: linear-gradient(to bottom, #000 0%, #000 40%, rgba(0,0,0,.55) 50%, transparent 59%); }
+   The image is 96% of the frame tall and starts 15% down, so the frame bottom sits at ~88% of it. */
+.hero .photo .cut { -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.5) 74%, transparent 86%); mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0,0,0,.5) 74%, transparent 86%); }
 
 /* Fade the whole opening-photo frame (blue background + photo) into the page at the bottom, so no edge line shows */
 .hero .photo { -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
