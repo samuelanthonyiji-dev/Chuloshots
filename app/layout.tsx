@@ -56,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Google+Sans+Flex:wght@400..700&family=Geist+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Google+Sans+Flex:wght@400..700&family=Geist+Mono:wght@400;500&family=Poppins:wght@500&display=swap"
         />
       </head>
       <body>{children}</body>

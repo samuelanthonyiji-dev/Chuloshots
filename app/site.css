@@ -380,7 +380,7 @@ footer .logo-clips { font-size: 24px; }
 .top-zone { position: relative; isolation: isolate; background: var(--night); }
 .top-zone .kg-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .top-zone .kg-bg::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(120% 70% at 50% 0%, transparent 40%, rgba(11,13,18,.55) 100%); }
-.top-zone > .hero, .top-zone > .types-tl { position: relative; z-index: 1; background: transparent; }
+.top-zone > .hero, .top-zone > .types-tl, .top-zone > .types-tiles { position: relative; z-index: 1; background: transparent; }
 
 /* Tools & skills section over the same kinetic dot grid */
 .kg-zone { position: relative; isolation: isolate; }
@@ -396,3 +396,13 @@ footer .logo-clips { font-size: 24px; }
 
 /* Big photo words (CHULO, SHOTS, LET'S WORK…) in the Fraunces display face */
 .photo .back, .photo .front { font-family: var(--display); font-weight: 700; font-variation-settings: "opsz" 144; letter-spacing: -.04em; }
+
+/* Strip under the opening photo: the video types as dark tiles with outline icons */
+.types-tiles { border-block: 1px solid rgba(255,255,255,.07); }
+.types-tiles .wrap { padding-block: 26px; }
+.types-tiles ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.types-tiles li { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 76px; padding: 14px 18px; border-radius: 12px; background: #161a24; box-shadow: inset 0 0 0 1px rgba(255,255,255,.07); color: #fff; font: 500 clamp(15px, 1.6vw, 18px)/1.2 "Poppins", var(--sans); text-align: center; transition: background .3s, transform .3s; }
+.types-tiles li:hover { background: #1c2232; transform: translateY(-3px); }
+.types-tiles svg { width: 26px; height: 26px; flex: none; fill: none; stroke: var(--cobalt-l); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 760px) { .types-tiles ul { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 420px) { .types-tiles li { flex-direction: column; gap: 8px; font-size: 14px; } }
